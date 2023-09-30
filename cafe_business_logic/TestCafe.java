@@ -24,6 +24,15 @@ public class TestCafe {
 
         System.out.println("\n---- Add Customers Test ----");
         ArrayList<String> customers = new ArrayList<String>();
+        customers.add("Dale");
+        customers.add("Bob");
         appTest.addCustomer(customers);
+
+        System.out.println("\n---- Print Price Chart Test ----");
+        appTest.printPriceChart("Arabian Beans", 4.00, 5);
+
+        System.out.println("\n---- Display Menu Overload Test ----");
+        ArrayList<Double> prices = new ArrayList<Double>(Arrays.asList(4.00, 5.25, 3.00, 4.50));
+        appTest.displayMenu(menuItems, prices);
     }
 }
